@@ -5,23 +5,13 @@
 @import "./node_modules/bootstrap/scss/mixins";
 
 
-@include media-breakpoint-only(xs){
+@include media-breakpoint-between(xs,lg){
     .container-fluid{
-        background-color: red;
+        background-color: violet;
     }
 }
-@include media-breakpoint-only(lg){
-    .container-fluid{
-        background-color: blue;
-    }
-}
-@include media-breakpoint-only(md){
+@include media-breakpoint-between(xl,xxl){
     .container-fluid{
         background-color: green;
-    }
-}
-@include media-breakpoint-only(sm){
-    .container-fluid{
-        background-color: yellow;
     }
 }
